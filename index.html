@@ -8,7 +8,7 @@
         <p>See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
         <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
       </section>
-      <section>
+<section>
         <h2>Cat Lists</h2>
         <h3>Things cats love:</h3>
         <ul>
@@ -33,13 +33,23 @@
       </section>
       <section>
         <h2>Cat Form</h2>
-        <form action="https://formspree.io/f/xnnazplz" method="POST">
-                  <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor"> Indoor</label>
-          <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
-           <input type="text" name="catphotourl" placeholder="cat photo URL" required>
-          <button type="submit">Submit</button>
+        <form action="https://freecatphotoapp.com/submit-cat-photo">
+          <fieldset>
+            <legend>Is your cat indoor or outdoor?</legend>
+          <label><input checked value="indoor" name="indoor-outdoor" type="radio" id="indoor">Indoor</label>
+          <label><input value="outdoor" name="indoor-outdoor" type="radio" id="outdoor">Outdoor</label>
+          </fieldset>
+          <fieldset>
+            <legend>what your cat's personality</legend>
+            <input checked value="loving" name="personality" type="checkbox" id="loving"><label for="loving">Loving</label>
+            <input  value="lazy" name="personality" type="checkbox" id="lazy"><label for="lazy">lazy</label>
+            <input value="energetic" name="personality" type="checkbox" id="energetic"><label for="energetic">Energetic<label>
+            
+          </fieldset>
+          <input type="text" name="catphotourl" placeholder="Cat Photo URL" required>
+          <button type="submit">Submit</buttton>
         </form>
       </section>
-    </main>
+ </main>
   </body>
 </html>
